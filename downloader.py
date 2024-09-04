@@ -149,7 +149,7 @@ def download_mp4(url):
         "--limit-rate","10.0M",
         "--throttled-rate","100K",
         ### Filesystem Options
-        "--output","./Videos/%(title)s.%(ext)s",        
+        "--output","./Videos/%(title)s.%(ext)s",
         "--restrict-filenames",
         "--force-overwrites",
         ### Thumbnail Options:
@@ -181,7 +181,7 @@ def download_mp4_sections(url):
         ### Filesystem Options
         "--paths","./Videos/",
         "--output","chapter:Chapters/%(section_number)s_%(section_title)s.%(ext)s",
-        "--output","%(title)s.%(ext)s",        
+        "--output","%(title)s.%(ext)s",
         "--restrict-filenames",
         "--force-overwrites",
         ### Thumbnail Options:
@@ -213,7 +213,7 @@ def download_mp3(url):
         "--throttled-rate","100K",
         ### Filesystem Options
         "--output","./Audio/%(title)s.%(ext)s",
-        "--restrict-filenames",        
+        "--restrict-filenames",
         "--force-overwrites",
         #"--trim-filenames", "32", # This option poofs for admin perms.
         ### Thumbnail Options:
@@ -248,7 +248,7 @@ def download_wav(url):
         "--throttled-rate","100K",
         ### Filesystem Options
         "--output","./Audio/%(title)s.%(ext)s",
-        "--restrict-filenames",        
+        "--restrict-filenames",
         "--force-overwrites",
         #"--trim-filenames", "32", # This option poofs for admin perms.
         ### Thumbnail Options:
@@ -285,7 +285,7 @@ def download_ogg(url):
         "--throttled-rate","100K",
         ### Filesystem Options
         "--output","./Audio/%(title)s.%(ext)s",
-        "--restrict-filenames",        
+        "--restrict-filenames",
         "--force-overwrites",
         #"--trim-filenames", "32", # This option poofs for admin perms.
         ### Thumbnail Options:
@@ -360,7 +360,7 @@ def main():
                 download_webm(url=url)
             case '4':
                 print("WAV")
-                download_wav(url=url)                
+                download_wav(url=url)
             case '5':
                 print("OGG")
                 download_ogg(url=url)
